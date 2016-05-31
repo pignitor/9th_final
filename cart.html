@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+  <html>
+   <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+    <link type="text/css" rel="stylesheet" href="css/Final.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>9th_Final</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <body class="blue-grey">
+       <header>
+           <nav>
+               <div class="nav-wrapper card green">
+                   <a href="#" class="brand-logo right black-text">Buy Items</a>
+                   <ul class="left teal">
+                       <li><a href="index.html" class="black-text blue-grey">Home</a></li>
+                       <li><a href="admin.html" class="black-text blue-grey">Login/Logout</a></li>
+                       <li><a href="cart.html" class="black-text blue-grey">Shopping Cart</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </header>
+       <main>
+           <div class="container">
+               <div class="row">
+                   <h1 class="left-align title">Your Items</h1>
+               </div>
+               <div class="row">
+                   <div class="col s12 main-container">
+                        
+                   </div>
+               </div>
+           </div>
+           <div class="newclass card-panel blue-grey">
+<form action="MAILTO: Cjdude22@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" value=""><br>
+E-mail:<br>
+<input type="text" name="mail" value=""><br>
+Items:<br>
+<input type="text" name="comment" value="" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>               
+           </div>
+       </main>
+       <footer class="page-footer green">
+           <div class="container">
+               <p><a href="#" class="black-text">Top of Page</a></p>
+           </div>
+           <div class="footer-copyright">
+               <div class="container">
+                  @2016 Green
+               </div>
+           </div>
+       </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="libs/backendless.js"></script>
+    <script type="text/javascript" src="js/Final.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+
+    <script id="blogs-template" type="text/x-handlebars-template">
+          {{#each posts}}
+          <div class="blog-post">
+          <h2 class="blog-post-title">{{title}}</h2> 
+          <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+          <div class="blog-post">{{content}}</div>
+          </div>   
+          {{/each}}
+      </script>
+      
+   </body>
+  </html>
